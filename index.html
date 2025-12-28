@@ -19,6 +19,7 @@
                         "secondary": "#E1306C", // Instagram-ish color for accents
                         "background-light": "#f6f6f8",
                         "background-dark": "#101622",
+                        "whatsapp": "#25D366",
                     },
                     fontFamily: {
                         "display": ["Manrope", "sans-serif"],
@@ -31,6 +32,16 @@
     </script>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Botón de WhatsApp flotante -->
+<a href="https://wa.me/XXXX" 
+   target="_blank" 
+   class="fixed bottom-6 right-6 z-50 bg-whatsapp hover:bg-green-500 text-white p-4 rounded-full shadow-2xl shadow-green-500/50 transition-all hover:scale-110 animate-bounce"
+   aria-label="Contactar por WhatsApp">
+   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.54.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.5c.11-.11.25-.29.37-.43c.12-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.41-.42-.56-.43c-.14 0-.3-.01-.47-.01z"/>
+   </svg>
+</a>
+
 <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
 <div class="px-4 md:px-10 py-3 flex items-center justify-between max-w-7xl mx-auto">
@@ -44,14 +55,18 @@
 <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Silex</h2>
 </div>
 <nav class="hidden md:flex items-center gap-8">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#servicios">Servicios</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#web">Web</a>
 <a class="text-sm font-medium hover:text-primary transition-colors" href="#redes">Redes Sociales</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#servicios">Servicios</a>
 <a class="text-sm font-medium hover:text-primary transition-colors" href="#testimonios">Testimonios</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#planes">Planes</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="hidden md:flex bg-primary hover:bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-blue-500/20">
-                        Empezar Ahora
-                    </button>
+<a href="https://wa.me/XXXX" 
+   target="_blank"
+   class="hidden md:flex bg-primary hover:bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-blue-500/20">
+   Empezar Ahora
+</a>
 <button class="md:hidden text-slate-900 dark:text-white">
 <span class="material-symbols-outlined">menu</span>
 </button>
@@ -82,10 +97,12 @@
             </p>
       
             <div class="flex flex-wrap gap-4 mt-2">
-              <button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+              <a href="https://wa.me/XXXX" 
+                 target="_blank"
+                 class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
                 CONTRATANOS
                 <span class="material-symbols-outlined text-sm">arrow_forward</span>
-              </button>
+              </a>
       
               <p class="text-sm text-slate-600 dark:text-slate-300 self-center italic">
                 Comunicate con nosotros
@@ -145,7 +162,7 @@
 <section class="py-16 md:py-24 px-4 md:px-10 max-w-7xl mx-auto">
     <div class="flex flex-col gap-20">
         <!-- PRIMER BLOQUE (WEB) -->
-        <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="flex flex-col md:flex-row gap-10 items-center" id="web">
             <div class="w-full md:w-1/2">
                 <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-slate-200">
                     <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent z-10"></div>
@@ -177,10 +194,12 @@
                     Menos fricción. Más claridad. Más tranquilidad desde el primer contacto.
                 </p>
                 <div class="flex gap-4 mt-6">
-                    <button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                    <a href="https://wa.me/XXXX" 
+                       target="_blank"
+                       class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
                         CONTRATANOS
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -220,7 +239,7 @@
                 <div class="w-12 h-12 rounded-full bg-pink-100 dark:bg-pink-900/30 flex items-center justify-center text-secondary">
                     <span class="material-symbols-outlined">center_focus_strong</span>
                 </div>
-                <h3 class="text-3xl font-bold text-slate-900 dark:text-white">¿Por qué tener Instagram?</h3>
+                <h3 class="text-3xl font-bold text-slate-900 dark:text-white">¿Por qué tener redes sociales?</h3>
                 <p class="text-lg text-slate-600 dark:text-slate-300">
                     Porque tus redes hablan por vos antes de que alguien te escriba.
                 </p>
@@ -240,10 +259,12 @@
                     Tu Instagram deja de ser una obligación y pasa a ser <strong>una extensión de tu forma de atender</strong>.
                 </p>
                 <div class="flex gap-4 mt-6">
-                    <button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                    <a href="https://wa.me/XXXX" 
+                       target="_blank"
+                       class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
                         CONTRATANOS
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -284,10 +305,12 @@
                     Cuando ambas están alineadas, el paciente entiende, confía y avanza.
                 </p>
                 <div class="flex gap-4 mt-6">
-                    <button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                    <a href="https://wa.me/XXXX" 
+                       target="_blank"
+                       class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
                         CONTRATANOS
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -357,118 +380,15 @@
 <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 md:px-10" id="planes">
 <div class="text-center mb-12">
 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Elegí cómo querés presentarte</h2>
-<p class="text-slate-600 dark:text-slate-300">No vendemos marketing. Acompañamos a profesionales de la salud a construir una presencia clara, ética y profesional.<br><br>Planes simples, transparentes y adaptados a tu etapa profesional.</p>
+<p class="text-slate-600 dark:text-slate-300">Acompañamos a profesionales de la salud a construir una presencia clara, ética y profesional.<br><br>Planes simples, transparentes y adaptados a tu etapa profesional.</p>
 <div class="flex justify-center mt-6">
-<button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
-                                CONTRATANOS
-                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
+<a href="https://wa.me/XXXX" 
+   target="_blank"
+   class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+    CONTRATANOS
+    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-<div class="flex flex-col p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 hover:border-primary/50 transition-all">
-<div class="mb-4">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white">Inicial</h3>
-<p class="text-sm text-slate-500 dark:text-slate-400">Para empezar tu presencia digital.</p>
-</div>
-<div class="mb-6">
-<span class="text-4xl font-black text-slate-900 dark:text-white">$499</span>
-<span class="text-slate-500 font-medium">/ pago único</span>
-</div>
-<button class="w-full py-3 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-900 dark:text-white font-bold mb-6 transition-colors">
-                            Seleccionar
-                        </button>
-<div class="space-y-3 flex-1">
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>Sitio web de 1 página (Landing)</span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>Formulario de contacto básico</span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>Hosting incluido por 1 año</span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>Optimización móvil básica</span>
-</div>
-</div>
-</div>
-<div class="flex flex-col p-6 rounded-2xl border-2 border-primary bg-white dark:bg-slate-800 relative shadow-xl transform md:-translate-y-2">
-<div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">MÁS POPULAR</div>
-<div class="mb-4">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white">Profesional</h3>
-<p class="text-sm text-slate-500 dark:text-slate-400">Ideal para consultorios establecidos.</p>
-</div>
-<div class="mb-6">
-<span class="text-4xl font-black text-slate-900 dark:text-white">$899</span>
-<span class="text-slate-500 font-medium">/ pago único</span>
-</div>
-<button class="w-full py-3 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold mb-6 transition-colors shadow-lg shadow-blue-500/30">
-                            Empezar Ahora
-                        </button>
-<div class="space-y-3 flex-1">
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span><strong>Sitio web de 5 páginas</strong></span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">chevck</span>
-<span><strong>Sistema de reservas online</strong></span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>Blog autogestionable</span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>Integración con WhatsApp</span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>SEO Local (Google Maps)</span>
-</div>
-</div>
-</div>
-<div class="flex flex-col p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 hover:border-primary/50 transition-all">
-<div class="mb-4">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white">Clínica</h3>
-<p class="text-sm text-slate-500 dark:text-slate-400">Para centros médicos y policlínicos.</p>
-</div>
-<div class="mb-6">
-<span class="text-4xl font-black text-slate-900 dark:text-white">$1499</span>
-<span class="text-slate-500 font-medium">/ pago único</span>
-</div>
-<button class="w-full py-3 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-900 dark:text-white font-bold mb-6 transition-colors">
-                            Seleccionar
-                        </button>
-<div class="space-y-3 flex-1">
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>Páginas ilimitadas</span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>Múltiples agendas (Varios doctores)</span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>Pasarela de pagos en línea</span>
-</div>
-<div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check</span>
-<span>SEO Avanzado + Analytics Pro</span>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-r from-slate-900 to-slate-800 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
-<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
-<div class="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
-<div class="flex-1">
-<h3 class="text-2xl md:text-3xl font-bold text-white mb-2">🚀 Plan de Crecimiento Integral</h3>
-<p class="text-slate-300 text-lg mb-6">Añade a tu web nuestro servicio de <strong>Gestión Web + Instagram</strong> mensual.</p>
-<ul class="flex flex-wrap gap-x-8 gap-y
+<div class
