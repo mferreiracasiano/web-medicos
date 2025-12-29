@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html class="light" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Hacemos tu web y tus redes para que transmitas confianza desde el primer contacto.</title>
-<meta name="description" content="Diseño web y gestión de redes sociales para psicólogos, médicos y odontólogos. Consigue más pacientes, consolida tu marca personal y automatiza tus citas.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Hacemos tu web y tus redes para que transmitas confianza desde el primer contacto.</title>
+    <meta name="description" content="Diseño web y gestión de redes sociales para psicólogos, médicos y odontólogos. Consigue más pacientes, consolida tu marca personal y automatiza tus citas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
                         "primary": "#2b6cee",
-                        "secondary": "#E1306C", // Instagram-ish color for accents
+                        "secondary": "#E1306C",
                         "background-light": "#f6f6f8",
                         "background-dark": "#101622",
                         "whatsapp": "#25D366",
@@ -32,363 +33,584 @@
     </script>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
-<!-- Botón de WhatsApp flotante -->
-<a href="https://wa.me/XXXX" 
-   target="_blank" 
-   class="fixed bottom-6 right-6 z-50 bg-whatsapp hover:bg-green-500 text-white p-4 rounded-full shadow-2xl shadow-green-500/50 transition-all hover:scale-110 animate-bounce"
-   aria-label="Contactar por WhatsApp">
-   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.54.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.5c.11-.11.25-.29.37-.43c.12-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.41-.42-.56-.43c-.14 0-.3-.01-.47-.01z"/>
-   </svg>
-</a>
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/XXXX" 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-whatsapp hover:bg-green-500 text-white p-4 rounded-full shadow-2xl shadow-green-500/50 transition-all hover:scale-110 animate-bounce"
+       aria-label="Contactar por WhatsApp">
+       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.54.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.5c.11-.11.25-.29.37-.43c.12-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.41-.42-.56-.43c-.14 0-.3-.01-.47-.01z"/>
+       </svg>
+    </a>
 
-<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
-<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
-<div class="px-4 md:px-10 py-3 flex items-center justify-between max-w-7xl mx-auto">
-<div class="flex items-center gap-2">
-<div class="size-8 text-primary">
-<svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 4C12.95 4 4 12.95 4 24H44C44 12.95 35.05 4 24 4Z" fill="currentColor"></path>
-<path d="M24 44C35.05 44 44 35.05 44 24H4C4 35.05 12.95 44 24 44Z" fill="currentColor" fill-opacity="0.5"></path>
-</svg>
-</div>
-<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Silex</h2>
-</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#web">Web</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#redes">Redes Sociales</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#servicios">Servicios</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#testimonios">Testimonios</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#planes">Planes</a>
-</nav>
-<div class="flex items-center gap-4">
-<a href="https://wa.me/XXXX" 
-   target="_blank"
-   class="hidden md:flex bg-primary hover:bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-blue-500/20">
-   Empezar Ahora
-</a>
-<button class="md:hidden text-slate-900 dark:text-white">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</header>
-<main class="flex-grow pt-16">
-    <section class="relative py-12 md:py-20 px-4 md:px-10 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row gap-10 items-center">
-      
-          <div class="flex-1 flex flex-col gap-6">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Header actualizado -->
+        <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+            <div class="px-4 md:px-10 py-3 flex items-center justify-between max-w-7xl mx-auto">
+                <div class="flex items-center gap-2">
+                    <div class="size-8 text-primary">
+                        <svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4C12.95 4 4 12.95 4 24H44C44 12.95 35.05 4 24 4Z" fill="currentColor"></path>
+                            <path d="M24 44C35.05 44 44 35.05 44 24H4C4 35.05 12.95 44 24 44Z" fill="currentColor" fill-opacity="0.5"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Silex</h2>
+                </div>
+                
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#web">Web</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#redes">Redes sociales</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#servicios">Servicios</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#testimonios">Testimonios</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#planes">Planes</a>
+                </nav>
+                
+                <div class="flex items-center gap-4">
+                    <a href="https://wa.me/XXXX" 
+                       target="_blank"
+                       class="hidden md:flex bg-primary hover:bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-blue-500/20 items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="mr-1">
+                            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.54.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.5c.11-.11.25-.29.37-.43c.12-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.41-.42-.56-.43c-.14 0-.3-.01-.47-.01z"/>
+                        </svg>
+                        Empezar Ahora
+                    </a>
+                    
+                    <button class="md:hidden text-slate-900 dark:text-white" id="menu-mobile">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
             
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-slate-900 dark:text-white">
-              Hacemos tu web y gestionamos tus redes
-            </h1>
-      
-            <p class="text-base md:text-lg text-slate-500 dark:text-slate-400 max-w-xl">
-                <strong> para que transmitas confianza y te encuentren más rápido.</strong>
-            </p>
-      
-            <p class="text-base text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed">
-              Antes de pedir un turno, visitan tu <strong>web</strong> y tus <strong>redes</strong> para responder una sola pregunta:
-              <strong>¿Me voy a sentir bien atendido acá?</strong>
-            </p>
-      
-            <p class="text-sm text-slate-500 dark:text-slate-400 italic mt-2">
-              ¿Y vos hoy cómo respondés?
-            </p>
-      
-            <div class="flex flex-wrap gap-4 mt-2">
-              <a href="https://wa.me/XXXX" 
-                 target="_blank"
-                 class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
-                CONTRATANOS
-                <span class="material-symbols-outlined text-sm">arrow_forward</span>
-              </a>
-      
-              <p class="text-sm text-slate-600 dark:text-slate-300 self-center italic">
-                Comunicate con nosotros
-              </p>
-            </div>
-          </div>
-      
-          <div class="flex-1 w-full relative">
-            <div class="absolute -inset-4 bg-primary/20 rounded-2xl blur-2xl transform rotate-3"></div>
-      
-            <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 dark:border-slate-800 aspect-[4/3] bg-slate-200">
-              <div
-                class="w-full h-full bg-cover bg-center"
-                role="img"
-                aria-label="Doctor reviewing patient records on a digital tablet in a modern medical office"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvwiXqhOGhwHWK4rmtNF07lwfV8d0CebHALQQllFBto-YrnXmxmRfsUXdgo4sIOa4DRfv8NghK_jj3iJqiR72Nd0e42UxGZjUgShfnAlftijmsrFdDNpG_9LHMgoIA-1CCJWL7VQrolWSc7pDdGGyAaEew_ovTfRRJNO_SUusyZrkSCfKgeKt2uAAKqWKbU9hmK-E5YoNhCOcde_y9LRV9T2qBV_pC-1zfxMHvvJYyOStnHOKzi8fxcAj1YWXHzxJHhunlODGbaCQ")'>
-              </div>
-            </div>
-          </div>
-      
-        </div>
-      </section>
-      
-
-    <section class="py-16 bg-white dark:bg-slate-900" id="servicios">
-<div class="max-w-7xl mx-auto px-4 md:px-10">
-<div class="flex flex-col gap-4 mb-12 text-center max-w-3xl mx-auto">
-<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Cada profesional comunica distinto.</h2>
-<p class="text-slate-600 dark:text-slate-300 text-lg">Adaptamos diseño y mensajes a tu especialidad y a cómo trabajás.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="flex flex-col p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-slate-800 hover:shadow-lg transition-all group">
-<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined text-3xl">psychology</span>
-</div>
-<h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Psicólogos</h3>
-<p class="text-slate-600 dark:text-slate-300 mb-4">Creamos espacios digitales que transmiten escucha, calma y contención incluso antes de la primera sesión.</p>
-</div>
-<div class="flex flex-col p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-slate-800 hover:shadow-lg transition-all group">
-<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined text-3xl">stethoscope</span>
-</div>
-<h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Médicos</h3>
-<p class="text-slate-600 dark:text-slate-300 mb-4">Ordenamos la información para que el paciente entienda, confíe y se sienta seguro al contactarte.</p>
-</div>
-<div class="flex flex-col p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-slate-800 hover:shadow-lg transition-all group">
-<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined text-3xl">dentistry</span>
-</div>
-<h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Odontólogos</h3>
-<p class="text-slate-600 dark:text-slate-300 mb-4">Trabajamos una presencia visual clara y profesional que reduzca temores y genere tranquilidad.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="py-16 md:py-24 px-4 md:px-10 max-w-7xl mx-auto">
-    <div class="flex flex-col gap-20">
-        <!-- PRIMER BLOQUE (WEB) -->
-        <div class="flex flex-col md:flex-row gap-10 items-center" id="web">
-            <div class="w-full md:w-1/2">
-                <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-slate-200">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent z-10"></div>
-                    <div class="w-full h-full bg-cover bg-center" role="img" aria-label="Dashboard mostrando análisis y calendario de citas de pacientes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAoZXYcPlMcXZ4LaxhpqzckaxAERj7AOQNUpDSjGe-ZTAiroiIeAYm5501M6diA6YXb4dn9HbyYHlEq-l5eFVxwOUhfFahJcOT0FhgCcKUVgOKdmqF2bqMiSelmErwMdxI8zhRp7SQY2fSZSLJLngwUmxArK5UIO44d7dNFwXVxNPdz1ywewjWmZEoIR6IXs2urwWGVi8qVGYozOYwBQCdd3AHCnJhVfQ_3YWTPehhkHGzL3_Q2lKFkC5rX2E-mlsCYlb2tKmZqaOM")'></div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 flex flex-col gap-4">
-                <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary">
-                    <span class="material-symbols-outlined">calendar_month</span>
-                </div>
-                <h3 class="text-3xl font-bold text-slate-900 dark:text-white">¿Por qué tener una web hoy?</h3>
-                <p class="text-lg text-slate-600 dark:text-slate-300">
-                    Porque antes de escribirte, tus pacientes quieren entender cómo trabajás y sentirse tranquilos.
-                </p>
-                <p class="text-lg font-medium text-slate-700 dark:text-slate-300">
-                    Nuestra propuesta
-                </p>
-                <p class="text-lg text-slate-600 dark:text-slate-300">
-                    Hacemos una web clara y simple que acompaña tu forma de atender.
-                </p>
-                <ul class="space-y-2 mt-4 text-slate-700 dark:text-slate-300">
-                    <li class="flex items-start gap-3">• se entiende rápido</li>
-                    <li class="flex items-start gap-3">• muestra disponibilidad clara</li>
-                    <li class="flex items-start gap-3">• evita idas y vueltas</li>
-                    <li class="flex items-start gap-3">• confirma turnos por WhatsApp</li>
-                    <li class="flex items-start gap-3">• funciona perfecto en el celular</li>
-                </ul>
-                <p class="text-lg text-slate-600 dark:text-slate-300 mt-4">
-                    Menos fricción. Más claridad. Más tranquilidad desde el primer contacto.
-                </p>
-                <div class="flex gap-4 mt-6">
+            <!-- Menú móvil -->
+            <div class="md:hidden hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800" id="mobile-menu">
+                <div class="px-4 py-4 space-y-4">
+                    <a class="block text-sm font-medium hover:text-primary transition-colors py-2" href="#web">Web</a>
+                    <a class="block text-sm font-medium hover:text-primary transition-colors py-2" href="#redes">Redes Sociales</a>
+                    <a class="block text-sm font-medium hover:text-primary transition-colors py-2" href="#servicios">Servicios</a>
+                    <a class="block text-sm font-medium hover:text-primary transition-colors py-2" href="#testimonios">Testimonios</a>
+                    <a class="block text-sm font-medium hover:text-primary transition-colors py-2" href="#planes">Planes</a>
                     <a href="https://wa.me/XXXX" 
                        target="_blank"
-                       class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
-                        CONTRATANOS
-                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                       class="block bg-primary hover:bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-bold transition-all shadow-lg shadow-blue-500/20 text-center">
+                        Contactar por WhatsApp
                     </a>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <!-- SEGUNDO BLOQUE (INSTAGRAM) -->
-        <div class="flex flex-col md:flex-row-reverse gap-10 items-center" id="redes">
-            <div class="w-full md:w-1/2">
-                <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center p-8">
-                    <div class="bg-white/95 dark:bg-slate-900/95 rounded-xl shadow-2xl w-full max-w-xs p-4 transform rotate-[-3deg] border border-white/20">
-                        <!-- Contenido de Instagram (mantener igual) -->
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700"></div>
-                            <div class="flex-1">
-                                <div class="h-2.5 w-24 bg-slate-200 dark:bg-slate-700 rounded-full mb-1"></div>
-                                <div class="h-2 w-16 bg-slate-100 dark:bg-slate-800 rounded-full"></div>
+        <main class="flex-grow pt-16">
+            <!-- Hero Section -->
+            <section class="relative py-12 md:py-20 px-4 md:px-10 max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-10 items-center">
+                    <div class="flex-1 flex flex-col gap-6">
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-slate-900 dark:text-white">
+                            Hacemos tu web y gestionamos tus redes
+                        </h1>
+                        <p class="text-base md:text-lg text-slate-500 dark:text-slate-400 max-w-xl">
+                            <strong> para que transmitas confianza y te encuentren más rápido.</strong>
+                        </p>
+                        <p class="text-base text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed">
+                            Antes de pedir un turno, visitan tu <strong>web</strong> y tus <strong>redes</strong> para responder una sola pregunta:
+                            <strong>¿Me voy a sentir bien atendido acá?</strong>
+                        </p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 italic mt-2">
+                            ¿Y vos hoy cómo respondés?
+                        </p>
+                        <div class="flex flex-wrap gap-4 mt-2">
+                            <a href="https://wa.me/XXXX" 
+                               target="_blank"
+                               class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                                CONTRATANOS
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                            <p class="text-sm text-slate-600 dark:text-slate-300 self-center italic">
+                                Comunicate con nosotros
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-1 w-full relative">
+                        <div class="absolute -inset-4 bg-primary/20 rounded-2xl blur-2xl transform rotate-3"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 dark:border-slate-800 aspect-[4/3] bg-slate-200">
+                            <div class="w-full h-full bg-cover bg-center" role="img" aria-label="Doctor reviewing patient records on a digital tablet in a modern medical office" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvwiXqhOGhwHWK4rmtNF07lwfV8d0CebHALQQllFBto-YrnXmxmRfsUXdgo4sIOa4DRfv8NghK_jj3iJqiR72Nd0e42UxGZjUgShfnAlftijmsrFdDNpG_9LHMgoIA-1CCJWL7VQrolWSc7pDdGGyAaEew_ovTfRRJNO_SUusyZrkSCfKgeKt2uAAKqWKbU9hmK-E5YoNhCOcde_y9LRV9T2qBV_pC-1zfxMHvvJYyOStnHOKzi8fxcAj1YWXHzxJHhunlODGbaCQ")'></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Servicios -->
+            <section class="py-16 bg-white dark:bg-slate-900" id="servicios">
+                <div class="max-w-7xl mx-auto px-4 md:px-10">
+                    <div class="flex flex-col gap-4 mb-12 text-center max-w-3xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Cada profesional comunica distinto.</h2>
+                        <p class="text-slate-600 dark:text-slate-300 text-lg">Adaptamos diseño y mensajes a tu especialidad y a cómo trabajás.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="flex flex-col p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-slate-800 hover:shadow-lg transition-all group">
+                            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">psychology</span>
                             </div>
-                            <span class="material-symbols-outlined text-slate-400">more_horiz</span>
+                            <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Psicólogos</h3>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">Creamos espacios digitales que transmiten escucha, calma y contención incluso antes de la primera sesión.</p>
                         </div>
-                        <div class="w-full aspect-square bg-slate-100 dark:bg-slate-800 rounded-lg mb-4 flex items-center justify-center text-slate-300">
-                            <span class="material-symbols-outlined text-6xl">add_a_photo</span>
+                        <div class="flex flex-col p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-slate-800 hover:shadow-lg transition-all group">
+                            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">stethoscope</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Médicos</h3>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">Ordenamos la información para que el paciente entienda, confíe y se sienta seguro al contactarte.</p>
                         </div>
-                        <div class="flex gap-4 mb-3 text-slate-800 dark:text-white">
-                            <span class="material-symbols-outlined text-secondary font-bold">favorite</span>
-                            <span class="material-symbols-outlined">chat_bubble</span>
-                            <span class="material-symbols-outlined">send</span>
+                        <div class="flex flex-col p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-slate-800 hover:shadow-lg transition-all group">
+                            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">dentistry</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Odontólogos</h3>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">Trabajamos una presencia visual clara y profesional que reduzca temores y genere tranquilidad.</p>
                         </div>
-                        <div class="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full mb-2"></div>
-                        <div class="h-2 w-3/4 bg-slate-100 dark:bg-slate-800 rounded-full"></div>
                     </div>
-                    <div class="absolute bottom-6 right-6 bg-white dark:bg-slate-800 px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
-                        <span class="material-symbols-outlined text-green-500">trending_up</span>
-                        <span class="font-bold text-slate-900 dark:text-white">+350 Pacientes</span>
-                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-1/2 flex flex-col gap-4">
-                <div class="w-12 h-12 rounded-full bg-pink-100 dark:bg-pink-900/30 flex items-center justify-center text-secondary">
-                    <span class="material-symbols-outlined">center_focus_strong</span>
-                </div>
-                <h3 class="text-3xl font-bold text-slate-900 dark:text-white">¿Por qué tener redes sociales?</h3>
-                <p class="text-lg text-slate-600 dark:text-slate-300">
-                    Porque tus redes hablan por vos antes de que alguien te escriba.
-                </p>
-                <p class="text-lg font-medium text-slate-700 dark:text-slate-300">
-                    Nuestra propuesta
-                </p>
-                <p class="text-lg text-slate-600 dark:text-slate-300">
-                    Gestionamos tu Instagram para acercarte a tus pacientes y generar confianza.
-                </p>
-                <ul class="space-y-2 mt-4 text-slate-700 dark:text-slate-300">
-                    <li class="flex items-start gap-3">• contenido claro, sin saturar</li>
-                    <li class="flex items-start gap-3">• humaniza tu práctica</li>
-                    <li class="flex items-start gap-3">• explica cómo trabajás</li>
-                    <li class="flex items-start gap-3">• refuerza la confianza antes del contacto</li>
-                </ul>
-                <p class="text-lg text-slate-600 dark:text-slate-300 mt-4">
-                    Tu Instagram deja de ser una obligación y pasa a ser <strong>una extensión de tu forma de atender</strong>.
-                </p>
-                <div class="flex gap-4 mt-6">
-                    <a href="https://wa.me/XXXX" 
-                       target="_blank"
-                       class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
-                        CONTRATANOS
-                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+            </section>
 
-        <!-- TERCER BLOQUE (WEB + INSTAGRAM) - NUEVO -->
-        <div class="flex flex-col md:flex-row gap-10 items-center">
-            <div class="w-full md:w-1/2">
-                <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-slate-200">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 via-secondary/20 to-transparent z-10"></div>
-                    <div class="w-full h-full bg-cover bg-center" role="img" aria-label="Smartphone y computadora mostrando web e Instagram sincronizados" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeZYmdfidmKy1AwNHWBpjMbGKQTQHWmYFxkpjwDSF_8d0yvLXBU5mmGHFEr0CxESw9YLtT3jb0ndmPKb9Fh-x-lTW4conqbxGDVlrE_SEscxrdN1Uaon5mzw-qVB1yntk96Dp6cDk1MlnUyXbMiK23_1bdT0wAX7_VshQY84jK5uLbB5B3uL0i--RnLtHaJnxa_u-9rpixHOQHfSPRcUPE7btilIBRbxCjVikg6-21UTpAip28kXioPrqqobOFXDTTn77w38Ntr4s")'></div>
+            <!-- Sección Web -->
+            <section class="py-16 md:py-24 px-4 md:px-10 max-w-7xl mx-auto">
+                <div class="flex flex-col gap-20">
+                    <!-- Bloque Web -->
+                    <div class="flex flex-col md:flex-row gap-10 items-center" id="web">
+                        <div class="w-full md:w-1/2">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-slate-200">
+                                <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent z-10"></div>
+                                <div class="w-full h-full bg-cover bg-center" role="img" aria-label="Dashboard mostrando análisis y calendario de citas de pacientes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAoZXYcPlMcXZ4LaxhpqzckaxAERj7AOQNUpDSjGe-ZTAiroiIeAYm5501M6diA6YXb4dn9HbyYHlEq-l5eFVxwOUhfFahJcOT0FhgCcKUVgOKdmqF2bqMiSelmErwMdxI8zhRp7SQY2fSZSLJLngwUmxArK5UIO44d7dNFwXVxNPdz1ywewjWmZEoIR6IXs2urwWGVi8qVGYozOYwBQCdd3AHCnJhVfQ_3YWTPehhkHGzL3_Q2lKFkC5rX2E-mlsCYlb2tKmZqaOM")'></div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 flex flex-col gap-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">calendar_month</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-slate-900 dark:text-white">¿Por qué tener una web hoy?</h3>
+                            <p class="text-lg text-slate-600 dark:text-slate-300">
+                                Porque antes de escribirte, tus pacientes quieren entender cómo trabajás y sentirse tranquilos.
+                            </p>
+                            <p class="text-lg font-medium text-slate-700 dark:text-slate-300">
+                                Nuestra propuesta
+                            </p>
+                            <p class="text-lg text-slate-600 dark:text-slate-300">
+                                Hacemos una web clara y simple que acompaña tu forma de atender.
+                            </p>
+                            <ul class="space-y-2 mt-4 text-slate-700 dark:text-slate-300">
+                                <li class="flex items-start gap-3">• se entiende rápido</li>
+                                <li class="flex items-start gap-3">• muestra disponibilidad clara</li>
+                                <li class="flex items-start gap-3">• evita idas y vueltas</li>
+                                <li class="flex items-start gap-3">• confirma turnos por WhatsApp</li>
+                                <li class="flex items-start gap-3">• funciona perfecto en el celular</li>
+                            </ul>
+                            <p class="text-lg text-slate-600 dark:text-slate-300 mt-4">
+                                Menos fricción. Más claridad. Más tranquilidad desde el primer contacto.
+                            </p>
+                            <div class="flex gap-4 mt-6">
+                                <a href="https://wa.me/XXXX" 
+                                   target="_blank"
+                                   class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                                    CONTRATANOS
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bloque Redes Sociales -->
+                    <div class="flex flex-col md:flex-row-reverse gap-10 items-center" id="redes">
+                        <div class="w-full md:w-1/2">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center p-8">
+                                <div class="bg-white/95 dark:bg-slate-900/95 rounded-xl shadow-2xl w-full max-w-xs p-4 transform rotate-[-3deg] border border-white/20">
+                                    <div class="flex items-center gap-3 mb-4">
+                                        <div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+                                        <div class="flex-1">
+                                            <div class="h-2.5 w-24 bg-slate-200 dark:bg-slate-700 rounded-full mb-1"></div>
+                                            <div class="h-2 w-16 bg-slate-100 dark:bg-slate-800 rounded-full"></div>
+                                        </div>
+                                        <span class="material-symbols-outlined text-slate-400">more_horiz</span>
+                                    </div>
+                                    <div class="w-full aspect-square bg-slate-100 dark:bg-slate-800 rounded-lg mb-4 flex items-center justify-center text-slate-300">
+                                        <span class="material-symbols-outlined text-6xl">add_a_photo</span>
+                                    </div>
+                                    <div class="flex gap-4 mb-3 text-slate-800 dark:text-white">
+                                        <span class="material-symbols-outlined text-secondary font-bold">favorite</span>
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <span class="material-symbols-outlined">send</span>
+                                    </div>
+                                    <div class="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full mb-2"></div>
+                                    <div class="h-2 w-3/4 bg-slate-100 dark:bg-slate-800 rounded-full"></div>
+                                </div>
+                                <div class="absolute bottom-6 right-6 bg-white dark:bg-slate-800 px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-green-500">trending_up</span>
+                                    <span class="font-bold text-slate-900 dark:text-white">+350 Pacientes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 flex flex-col gap-4">
+                            <div class="w-12 h-12 rounded-full bg-pink-100 dark:bg-pink-900/30 flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined">center_focus_strong</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-slate-900 dark:text-white">¿Por qué tener redes sociales?</h3>
+                            <p class="text-lg text-slate-600 dark:text-slate-300">
+                                Porque tus redes hablan por vos antes de que alguien te escriba.
+                            </p>
+                            <p class="text-lg font-medium text-slate-700 dark:text-slate-300">
+                                Nuestra propuesta
+                            </p>
+                            <p class="text-lg text-slate-600 dark:text-slate-300">
+                                Gestionamos tu Instagram para acercarte a tus pacientes y generar confianza.
+                            </p>
+                            <ul class="space-y-2 mt-4 text-slate-700 dark:text-slate-300">
+                                <li class="flex items-start gap-3">• contenido claro, sin saturar</li>
+                                <li class="flex items-start gap-3">• humaniza tu práctica</li>
+                                <li class="flex items-start gap-3">• explica cómo trabajás</li>
+                                <li class="flex items-start gap-3">• refuerza la confianza antes del contacto</li>
+                            </ul>
+                            <p class="text-lg text-slate-600 dark:text-slate-300 mt-4">
+                                Tu Instagram deja de ser una obligación y pasa a ser <strong>una extensión de tu forma de atender</strong>.
+                            </p>
+                            <div class="flex gap-4 mt-6">
+                                <a href="https://wa.me/XXXX" 
+                                   target="_blank"
+                                   class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                                    CONTRATANOS
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bloque Web + Instagram -->
+                    <div class="flex flex-col md:flex-row gap-10 items-center">
+                        <div class="w-full md:w-1/2">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-slate-200">
+                                <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 via-secondary/20 to-transparent z-10"></div>
+                                <div class="w-full h-full bg-cover bg-center" role="img" aria-label="Smartphone y computadora mostrando web e Instagram sincronizados" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeZYmdfidmKy1AwNHWBpjMbGKQTQHWmYFxkpjwDSF_8d0yvLXBU5mmGHFEr0CxESw9YLtT3jb0ndmPKb9Fh-x-lTW4conqbxGDVlrE_SEscxrdN1Uaon5mzw-qVB1yntk96Dp6cDk1MlnUyXbMiK23_1bdT0wAX7_VshQY84jK5uLbB5B3uL0i--RnLtHaJnxa_u-9rpixHOQHfSPRcUPE7btilIBRbxCjVikg6-21UTpAip28kXioPrqqobOFXDTTn77w38Ntr4s")'></div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 flex flex-col gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary">sync</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-slate-900 dark:text-white">¿Por qué tener web e Instagram?</h3>
+                            <p class="text-lg text-slate-600 dark:text-slate-300">
+                                Porque cumplen roles distintos, pero trabajan juntas.
+                            </p>
+                            <p class="text-lg text-slate-600 dark:text-slate-300">
+                                La web ordena, explica y facilita el contacto.<br>
+                                Instagram acerca, muestra y genera confianza.
+                            </p>
+                            <p class="text-lg font-medium text-slate-700 dark:text-slate-300 mt-2">
+                                Nuestra propuesta
+                            </p>
+                            <p class="text-lg text-slate-600 dark:text-slate-300">
+                                Hacemos que tu web y tu Instagram trabajen como un solo sistema.
+                            </p>
+                            <ul class="space-y-2 mt-4 text-slate-700 dark:text-slate-300">
+                                <li class="flex items-start gap-3">• Instagram lleva a la web</li>
+                                <li class="flex items-start gap-3">• la web convierte visitas en consultas</li>
+                                <li class="flex items-start gap-3">• el mensaje es coherente en todos los puntos de contacto</li>
+                                <li class="flex items-start gap-3">• tu presencia digital transmite tranquilidad y profesionalismo</li>
+                            </ul>
+                            <p class="text-lg text-slate-600 dark:text-slate-300 mt-4">
+                                Cuando ambas están alineadas, el paciente entiende, confía y avanza.
+                            </p>
+                            <div class="flex gap-4 mt-6">
+                                <a href="https://wa.me/XXXX" 
+                                   target="_blank"
+                                   class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                                    CONTRATANOS
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-1/2 flex flex-col gap-4">
-                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
-                    <span class="material-symbols-outlined text-primary">sync</span>
+            </section>
+
+            <!-- Testimonios -->
+            <section class="py-16 bg-white dark:bg-slate-900 overflow-hidden" id="testimonios">
+                <div class="max-w-7xl mx-auto px-4 md:px-10">
+                    <h2 class="text-3xl font-bold text-center mb-10 text-slate-900 dark:text-white">Profesionales que cuidan también su presencia</h2>
+                    <div class="flex overflow-x-auto pb-8 snap-x snap-mandatory gap-6 no-scrollbar [&::-webkit-scrollbar]:hidden">
+                        <div class="snap-center shrink-0 w-80 md:w-96 p-6 rounded-2xl bg-background-light dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 rounded-full bg-cover bg-center" role="img" aria-label="Foto de perfil de Dra. Ana Gómez" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCr_AevbirWs5_qvvMy_QKiTbG2wTZHf_iES3TEVMmVY1XD_yhd-bk9_gaX5U0PAHY-vUeCiuRmDxeMhlOHgxnx53au3d_QizDTTA88TBLq2W0GwsEobjwdLkWS4F097qi3iWxAPlZLmsi2u5RNn-XGDrzeEfziVMKGiv74gKsK2UUS--jA3mQ7eiJlcNjAyL9a63PMFit9IBftZ3W0A0sXM3kiFt0zFxvmV0R0AP8AGhwx6w4jekPluOq8W63SLtN-muHckV3ifN0")'></div>
+                                <div>
+                                    <p class="font-bold text-slate-900 dark:text-white">Dra. Ana Gómez</p>
+                                    <p class="text-sm text-primary">Pediatra</p>
+                                </div>
+                            </div>
+                            <div class="flex text-yellow-400 text-sm">
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 italic">"Mis pacientes llegan más tranquilos, ya saben cómo trabajo."</p>
+                        </div>
+                        <div class="snap-center shrink-0 w-80 md:w-96 p-6 rounded-2xl bg-background-light dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 rounded-full bg-cover bg-center" role="img" aria-label="Foto de perfil de Lic. Carlos Ruiz" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4qCVsll_7oHwbGOUSez76MB-JP6qx96S_umYidRhcdPclNd1uryEuzlTMpR6TdpR_gS1iQuCuRha9BAXDJuMUN_xD9I7r9njULC5CB72iFfzE0Xclnysz0zJKEp7mfk3Y12488BMTFsLrezkyFTc2YWcMSJpBsb1UwVLx50UYl9UzSBSJgecOvaOfYjuqvrztu-0i8YrLznTMwD0r51lDWm8G9pljJfnt3-48hCI1_17UTZD0EiZf5S0TlWnYlFm9qB9ERymMSZw")'></div>
+                                <div>
+                                    <p class="font-bold text-slate-900 dark:text-white">Lic. Carlos Ruiz</p>
+                                    <p class="text-sm text-primary">Psicólogo Clínico</p>
+                                </div>
+                            </div>
+                            <div class="flex text-yellow-400 text-sm">
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 italic">"La web refleja lo que hago en el consultorio."</p>
+                        </div>
+                        <div class="snap-center shrink-0 w-80 md:w-96 p-6 rounded-2xl bg-background-light dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 rounded-full bg-cover bg-center" role="img" aria-label="Foto de perfil de Dra. Sofía Martí" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1lx6pVZsqgEecujVAxxNl8z1eJfrDAxbw7qewJCVVh-QoIyntuva6WRJM4BDFSFTrEX5_YXCqyH8mGH5MWolKL3g7Dt1gDStUssAufeJOGqzNxaJuj9Ti9QYM4jl3vAbsxV3jX5ihkdvck5Wm9Mq1m5otNfZcDwoZ6OA-WFjTWAIoFoXwxBAXgAQMu0cMlJTip7vGr7WETVpW5uJKPidh0_sY6gUJQ7ECyXI6LVcmV_PNAwZk0zHIDWlAYKSwxKHmO3Aplc7PB_4")'></div>
+                                <div>
+                                    <p class="font-bold text-slate-900 dark:text-white">Dra. Sofía Martí</p>
+                                    <p class="text-sm text-primary">Odontóloga</p>
+                                </div>
+                            </div>
+                            <div class="flex text-yellow-400 text-sm">
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 italic">"Hoy mi presencia online está alineada con mi forma de atender."</p>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="text-3xl font-bold text-slate-900 dark:text-white">¿Por qué tener web e Instagram?</h3>
-                <p class="text-lg text-slate-600 dark:text-slate-300">
-                    Porque cumplen roles distintos, pero trabajan juntas.
-                </p>
-                <p class="text-lg text-slate-600 dark:text-slate-300">
-                    La web ordena, explica y facilita el contacto.<br>
-                    Instagram acerca, muestra y genera confianza.
-                </p>
-                <p class="text-lg font-medium text-slate-700 dark:text-slate-300 mt-2">
-                    Nuestra propuesta
-                </p>
-                <p class="text-lg text-slate-600 dark:text-slate-300">
-                    Hacemos que tu web y tu Instagram trabajen como un solo sistema.
-                </p>
-                <ul class="space-y-2 mt-4 text-slate-700 dark:text-slate-300">
-                    <li class="flex items-start gap-3">• Instagram lleva a la web</li>
-                    <li class="flex items-start gap-3">• la web convierte visitas en consultas</li>
-                    <li class="flex items-start gap-3">• el mensaje es coherente en todos los puntos de contacto</li>
-                    <li class="flex items-start gap-3">• tu presencia digital transmite tranquilidad y profesionalismo</li>
-                </ul>
-                <p class="text-lg text-slate-600 dark:text-slate-300 mt-4">
-                    Cuando ambas están alineadas, el paciente entiende, confía y avanza.
-                </p>
-                <div class="flex gap-4 mt-6">
-                    <a href="https://wa.me/XXXX" 
-                       target="_blank"
-                       class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
-                        CONTRATANOS
-                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </a>
+            </section>
+
+            <!-- SECCIÓN DE PLANES ACTUALIZADA - CON PLAN 3 RECOMENDADO EN EL MEDIO -->
+            <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 md:px-10" id="planes">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Elegí cómo querés presentarte</h2>
+                    <p class="text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">No vendemos marketing. Acompañamos a profesionales de la salud a construir una presencia clara, ética y profesional.<br><br>Planes simples, transparentes y adaptados a tu etapa profesional.</p>
+                    <div class="flex justify-center mt-6">
+                        <a href="https://wa.me/XXXX" 
+                           target="_blank"
+                           class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                            CONTRATANOS
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <!-- PLAN 1: WEB BÁSICA PERSONALIZADA -->
+                    <div class="flex flex-col p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 hover:border-primary/50 transition-all hover:shadow-lg">
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">💻 Web Básica Personalizada</h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Web clara, simple y hecha a tu medida</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-black text-slate-900 dark:text-white">$280.000</span>
+                            <span class="text-slate-500 font-medium"> / pago único</span>
+                        </div>
+                        
+                        <a href="https://wa.me/XXXX?text=Hola!%20Estoy%20interesado%20en%20el%20plan%20Web%20Básica%20Personalizada"
+                           target="_blank"
+                           class="w-full py-3 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-900 dark:text-white font-bold mb-6 transition-colors text-center">
+                            Seleccionar
+                        </a>
+                        
+                        <div class="space-y-3 flex-1 mb-4">
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span><strong>Web básica tipo portfolio / landing</strong></span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Diseño personalizado según tu especialidad</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Adaptada a celular</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Información clara sobre cómo trabajás</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Botón de contacto / WhatsApp</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Contenido ordenado y fácil de entender</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-4 border-t border-slate-200 dark:border-slate-700">
+                            <p class="text-xs text-slate-500 dark:text-slate-400 italic">
+                                Precio base. Puede variar según cantidad de secciones, funcionalidades extra o necesidades específicas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PLAN 3: WEB + REDES (SISTEMA COMPLETO) - RECOMENDADO EN EL MEDIO -->
+                    <div class="flex flex-col p-6 rounded-2xl border-2 border-primary bg-white dark:bg-slate-800 relative shadow-xl transform md:-translate-y-2">
+                        <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">MÁS RECOMENDADO</div>
+                        
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">🔗 Web + Redes (Sistema Completo)</h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Tu presencia digital trabajando en conjunto</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-baseline">
+                                <span class="text-4xl font-black text-slate-900 dark:text-white">$680.000</span>
+                                <span class="text-slate-500 font-medium ml-2"> / total</span>
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                                Incluye: <br>
+                                • Web básica personalizada ($260.000)<br>
+                                • 3 meses de gestión de redes ($140.000/mes)
+                            </p>
+                            <div class="bg-primary/10 text-primary text-sm font-medium p-3 rounded-lg mt-3">
+                                <span class="font-bold">AHORRO $40.000:</span> En vez de $720.000 pagás $680.000
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/XXXX?text=Hola!%20Estoy%20interesado%20en%20el%20plan%20Web%20%2B%20Redes%20(Sistema%20Completo)%20-%20RECOMENDADO"
+                           target="_blank"
+                           class="w-full py-3 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold mb-6 transition-colors shadow-lg shadow-blue-500/30 text-center">
+                            Empezar Ahora
+                        </a>
+                        
+                        <div class="space-y-3 flex-1 mb-4">
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span><strong>Web básica personalizada</strong> completa</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span><strong>3 meses de gestión de Instagram</strong> profesional</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Mensaje coherente entre web y redes</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Instagram que lleva a la web</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Web que convierte visitas en consultas</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Estrategia coordinada integral</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span><strong>Reportes mensuales de métricas</strong></span>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-4 border-t border-slate-200 dark:border-slate-700">
+                            <p class="text-xs text-slate-500 dark:text-slate-400 italic">
+                                <strong>Combinación más efectiva</strong>. Precio total por web + 3 meses de redes. Servicio de redes: mensual.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PLAN 2: GESTIÓN DE REDES SOCIALES (Instagram) -->
+                    <div class="flex flex-col p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 hover:border-primary/50 transition-all hover:shadow-lg">
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">📱 Gestión de Redes Sociales</h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Redes pensadas para acercar y generar confianza</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-baseline">
+                                <span class="text-4xl font-black text-slate-900 dark:text-white">$150.000</span>
+                                <span class="text-slate-500 font-medium ml-2"> / mes</span>
+                            </div>
+                            <p class="text-sm text-slate-500 mt-1">Servicio mensual de gestión continua</p>
+                        </div>
+                        
+                        <a href="https://wa.me/XXXX?text=Hola!%20Estoy%20interesado%20en%20el%20plan%20Gestión%20de%20Redes%20Sociales%20(mensual)"
+                           target="_blank"
+                           class="w-full py-3 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-900 dark:text-white font-bold mb-6 transition-colors text-center">
+                            Seleccionar
+                        </a>
+                        
+                        <div class="space-y-3 flex-1 mb-4">
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span><strong>Gestión de Instagram completa (mensual)</strong></span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Planificación de contenido mensual</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Publicaciones claras y sin saturar</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Enfoque informativo y humano</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Mensajes alineados a tu forma de atender</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary text-xl">check</span>
+                                <span>Reporte mensual de métricas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-4 border-t border-slate-200 dark:border-slate-700">
+                            <p class="text-xs text-slate-500 dark:text-slate-400 italic">
+                                <strong>Servicio mensual</strong>. Puede variar según cantidad de posteos, formato (reels, stories), estrategia o alcance del plan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nota explicativa sobre precios -->
+               
+            </section>
+        </main>
     </div>
-</section>
 
-
-
-<section class="py-16 bg-white dark:bg-slate-900 overflow-hidden" id="testimonios">
-<div class="max-w-7xl mx-auto px-4 md:px-10">
-<h2 class="text-3xl font-bold text-center mb-10 text-slate-900 dark:text-white">Profesionales que cuidan también su presencia</h2>
-<div class="flex overflow-x-auto pb-8 snap-x snap-mandatory gap-6 no-scrollbar [&amp;::-webkit-scrollbar]:hidden">
-<div class="snap-center shrink-0 w-80 md:w-96 p-6 rounded-2xl bg-background-light dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col gap-4">
-<div class="flex items-center gap-4">
-<div class="w-14 h-14 rounded-full bg-cover bg-center" role="img" aria-label="Foto de perfil de Dra. Ana Gómez" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCr_AevbirWs5_qvvMy_QKiTbG2wTZHf_iES3TEVMmVY1XD_yhd-bk9_gaX5U0PAHY-vUeCiuRmDxeMhlOHgxnx53au3d_QizDTTA88TBLq2W0GwsEobjwdLkWS4F097qi3iWxAPlZLmsi2u5RNn-XGDrzeEfziVMKGiv74gKsK2UUS--jA3mQ7eiJlcNjAyL9a63PMFit9IBftZ3W0A0sXM3kiFt0zFxvmV0R0AP8AGhwx6w4jekPluOq8W63SLtN-muHckV3ifN0")'></div>
-<div>
-<p class="font-bold text-slate-900 dark:text-white">Dra. Ana Gómez</p>
-<p class="text-sm text-primary">Pediatra</p>
-</div>
-</div>
-<div class="flex text-yellow-400 text-sm">
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-</div>
-<p class="text-slate-600 dark:text-slate-300 italic">"Mis pacientes llegan más tranquilos, ya saben cómo trabajo."</p>
-</div>
-<div class="snap-center shrink-0 w-80 md:w-96 p-6 rounded-2xl bg-background-light dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col gap-4">
-<div class="flex items-center gap-4">
-<div class="w-14 h-14 rounded-full bg-cover bg-center" role="img" aria-label="Foto de perfil de Lic. Carlos Ruiz" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4qCVsll_7oHwbGOUSez76MB-JP6qx96S_umYidRhcdPclNd1uryEuzlTMpR6TdpR_gS1iQuCuRha9BAXDJuMUN_xD9I7r9njULC5CB72iFfzE0Xclnysz0zJKEp7mfk3Y12488BMTFsLrezkyFTc2YWcMSJpBsb1UwVLx50UYl9UzSBSJgecOvaOfYjuqvrztu-0i8YrLznTMwD0r51lDWm8G9pljJfnt3-48hCI1_17UTZD0EiZf5S0TlWnYlFm9qB9ERymMSZw")'></div>
-<div>
-<p class="font-bold text-slate-900 dark:text-white">Lic. Carlos Ruiz</p>
-<p class="text-sm text-primary">Psicólogo Clínico</p>
-</div>
-</div>
-<div class="flex text-yellow-400 text-sm">
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-</div>
-<p class="text-slate-600 dark:text-slate-300 italic">"La web refleja lo que hago en el consultorio."</p>
-</div>
-<div class="snap-center shrink-0 w-80 md:w-96 p-6 rounded-2xl bg-background-light dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col gap-4">
-<div class="flex items-center gap-4">
-<div class="w-14 h-14 rounded-full bg-cover bg-center" role="img" aria-label="Foto de perfil de Dra. Sofía Martí" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1lx6pVZsqgEecujVAxxNl8z1eJfrDAxbw7qewJCVVh-QoIyntuva6WRJM4BDFSFTrEX5_YXCqyH8mGH5MWolKL3g7Dt1gDStUssAufeJOGqzNxaJuj9Ti9QYM4jl3vAbsxV3jX5ihkdvck5Wm9Mq1m5otNfZcDwoZ6OA-WFjTWAIoFoXwxBAXgAQMu0cMlJTip7vGr7WETVpW5uJKPidh0_sY6gUJQ7ECyXI6LVcmV_PNAwZk0zHIDWlAYKSwxKHmO3Aplc7PB_4")'></div>
-<div>
-<p class="font-bold text-slate-900 dark:text-white">Dra. Sofía Martí</p>
-<p class="text-sm text-primary">Odontóloga</p>
-</div>
-</div>
-<div class="flex text-yellow-400 text-sm">
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-</div>
-<p class="text-slate-600 dark:text-slate-300 italic">"Hoy mi presencia online está alineada con mi forma de atender."</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-16 md:py-24 max-w-7xl mx-auto px-4 md:px-10" id="planes">
-<div class="text-center mb-12">
-<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Elegí cómo querés presentarte</h2>
-<p class="text-slate-600 dark:text-slate-300">Acompañamos a profesionales de la salud a construir una presencia clara, ética y profesional.<br><br>Planes simples, transparentes y adaptados a tu etapa profesional.</p>
-<div class="flex justify-center mt-6">
-<a href="https://wa.me/XXXX" 
-   target="_blank"
-   class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2">
-    CONTRATANOS
-    <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-<div class
+    <!-- Script para el menú móvil -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('menu-mobile');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+                
+                document.addEventListener('click', function(event) {
+                    if (!menuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
